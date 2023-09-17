@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list </title>
+</head>
+
+<body>
+    <div id="container">
+        <input type="text" value="Add an item" id="textInput">
+        <button id="add">add</button>
+        <button  id="clear" >clear</button>
+    </div>
+    <div id="lists">
+        <ul class="toDoLists">
+
+        </ul>
+
+    </div>
+
+    <script type="text/javascript">
+    
+        const textInput  = document.getElementById('textInput');
+        const addbtn = document.getElementById('add');
+        const clearbtn = document.getElementById('clear');
+        const toDoLists=document.querySelector('.toDoLists');
+
+    addbtn.addEventListener('click',addList);
+    clearbtn.addEventListener('click',clearList);
+
+
+//defining addList function
+function addList(){
+    const inputValue = textInput.value.trim()
+
+    if (inputValue !=='')
+    {
+        const listItem=document.createElement('li');
+        listItem.innerText=inputValue;
+        toDoLists.appendChild(listItem);
+
+        // clear the input field
+        textInput.value='';
+    }
+
+}
+// function to clear list
+function clearList(){
+    toDoLists.innerHTML="";
+}
+    </script>
+</body>
+
+</html>
