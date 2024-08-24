@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="calculator">
+        <div id="display" aria-readonly>
+            <div id="previousDisplay">This is display </div>
+            <div id="currentOperand">This is display for operand</div>
+        </div>
+
+        <div id="buttons">
+            <button type="button" id="openBracket">(</button>
+            <button type="button" id="closeBracket">)</button>
+            <button type="button" class="operation" id="percent">%</button>
+            <button type="button" id="clear">AC</button>
+
+            <button type="button" class="numbers">7</button>
+            <button type="button" class="numbers">8</button>
+            <button type="button" class="numbers">9</button>
+            <button type="button" id="delete">DEL</button>
+
+            <button type="button" class="numbers">4</button>
+            <button type="button" class="numbers">5</button>
+            <button type="button" class="numbers">6</button>
+            <button type="button" class="operation" id="multiply">*</button>
+
+            <button type="button" class="numbers">1</button>
+            <button type="button" class="numbers">2</button>
+            <button type="button" class="numbers">3</button>
+            <button type="button" class="operation" id="subtract">-</button>
+
+            <button type="button" class="numbers">0</button>
+            <button type="button" id="dot">.</button>
+            <button type="button" class="operation" id="divide">/</button>
+            <button type="button" class="operation" id="add">+</button>
+
+            <button type="button" class="operation" id="log" onclick="computeLn()">Log</button>
+            <button type="button" class="operation" id="sqrt" onclick="computeSqrt()">√</button>
+            <button type="button" id="ans">ANS</button>
+            <button type="button" class="operation" id="equals">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

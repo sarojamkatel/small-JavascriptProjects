@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dom manipulation</title>
+</head>
+
+<body>
+
+<div id="cunt">
+
+  <p>
+    this is the paragraph inside p tag
+  </p>
+<button id="button"> Remove Paragraph</button>
+
+</div>
+
+<script>
+  const button=document.getElementById('button')
+const container=document.getElementById('cunt')
+
+button.addEventListener("click",()=>{
+  const paragraph=document.querySelector('p');
+  container.removeChild(paragraph);
+})
+</script>
+
+</body>
+
+</html>

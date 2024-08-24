@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+}
+
+#calculator {
+    width: 320px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+#display {
+    background-color: #222;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: right;
+    height: 60px;
+    overflow: hidden;
+}
+
+#previousDisplay {
+    font-size: 14px;
+    color: #bbb;
+}
+
+#currentOperand {
+    font-size: 28px;
+    color: #fff;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+button.operation {
+    background-color: #ff9500;
+}
+
+button#equals {
+    background-color: #ff3b30;
+    grid-column: span 2;
+}
+
+button#equals:hover {
+    background-color: #ff615e;
+}
+
+button#clear {
+    background-color: #d32f2f;
+}
+
+button#clear:hover {
+    background-color: #e53935;
+}
+
+button#delete {
+    background-color: #f39c12;
+}
+
+button#delete:hover {
+    background-color: #f1c40f;
+}
+
+button#ans {
+    background-color: #007aff;
+}
+
+button#ans:hover {
+    background-color: #339aff;
+}
+
+#log, #sqrt {
+    background-color: #34c759;
+}
+
+#log:hover, #sqrt:hover {
+    background-color: #66d88a;
+}
