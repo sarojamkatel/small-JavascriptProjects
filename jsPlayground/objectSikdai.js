@@ -42,7 +42,6 @@ let obj3= {
 
 console.table(obj3);
 
-
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 
  // object methods 
@@ -53,7 +52,6 @@ let obj4 = {
     fullName: function(){
         console.log(this.name+" "+ this.surname) ;
     },
-
 };
 console.table(obj4);
 

@@ -1,0 +1,2 @@
+//  js objects have a special property called prototype that is either null or reference to another object . 
+//   prototype is a mehanism that allows object to inherit properties and methods from other objects.
